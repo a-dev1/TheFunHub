@@ -7,9 +7,10 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);
+    /* background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%); */
+    background: linear-gradient(to right top, #000000 0%, #000000 25%, #000000 100%);
 }
 
 .heading {
@@ -19,12 +20,24 @@ body {
 }
 
 #search {
-    margin: 5px;
-    padding: 10px;
     border: none;
-    border-radius: 4px;
-    height: 40px;
-    width: 250px;
+    outline: none;
+    font-size: 20px;
+    padding: 20px;
+    width: 500px;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.search_icon {
+    color: #fff;
+    background-color: black;
+    border-radius: 50%;
+    padding: 16px;
+    font-size: 40px;
+    /* position: absolute; */
+    transform: translateX(-65px);
 }
 
 h2,
@@ -43,11 +56,16 @@ h3 {
 }
 
 .img_container {
-    width: 180px;
-    height: 180px;
-    border: 5px solid #fff;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #000;
     border-radius: 2px;
     position: relative;
+    transition: all 0.2s linear;
+}
+
+.img_container:hover {
+    transform: scale(1.1);
 }
 
 .img_container img {
@@ -64,7 +82,7 @@ h3 {
 .meal_info {
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.651); */
+    background-color: rgba(0, 0, 0, 0.851);
     color: black;
     position: absolute;
     top: 0;
@@ -84,23 +102,25 @@ h3 {
 
 .meal_info:hover {
     opacity: 1;
+    transform: scale(0.9);
+    cursor: pointer;
 }
 
 .results-container {
     display: grid;
-    grid-template-columns: repeat(4, 180px);
+    grid-template-columns: repeat(4, 200px);
     grid-gap: 30px;
 }
 
 @media screen and (max-width: 950px) {
     .results-container {
-        grid-template-columns: repeat(3, 180px);
+        grid-template-columns: repeat(3, 200px);
     }
 }
 
 @media screen and (max-width: 700px) {
     .results-container {
-        grid-template-columns: repeat(2, 180px);
+        grid-template-columns: repeat(2, 200px);
     }
 
     .img_container {
@@ -150,3 +170,5 @@ div span {
     padding: 4px;
     font-size: 15px;
 }
+
+.found-or-not {}
