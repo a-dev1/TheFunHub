@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vh;
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  /* align-items: center; */
+}
+
+.main_card_body {
+  display: flex;
+  background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);
+  /* background-image: linear-gradient(to right top, rgb(25, 65, 137) 0%, rgb(59, 73, 128) 25%, rgb(135, 56, 167) 100%); */
+  font-style: normal;
+  padding: 50px;
+  border-radius: 24px;
+  margin-top: 50px;
+}
+
+.left_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+}
+
+.title {
+  position: absolute;
+  color: #fff;
+  /* top: 0px; */
+}
+
+.left_container .headline {
+  padding-top: 100px;
+  font-size: 60px;
+  color: #fff;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.left_container .headline span {
+  color: #c48cfc;
+}
+
+/* .description {
+
+} */
+
+.description {
+  font-size: 19px;
+  line-height: 1.4211;
+  font-weight: 400;
+  letter-spacing: .012em;
+  padding: 10px 0 30px 0;
+  color: #fff;
+}
+
+.left_container button {
+  padding: 10px 20px;
+  width: 250px;
+  border-radius: 24px;
+  margin-top: 25px;
+  background-color: transparent;
+  border: 3px solid #fff;
+}
+
+.left_container button a {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.left_container button a:focus {
+  color: #5ffbf1;
+}
+
+.right_container {
+  width: 600px;
+  height: 400px;
+  background-color: transparent;
+  margin: auto 200px;
+  margin-right: -50px;
+}
+
+.right_container img {
+  width: 600px;
+  height: 450px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.main_card_body:nth-child(2) {
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.main_card_body:nth-child(2) .left_container .headline span {
+  color: #a8eb12;
+}
+
+.main_card_body:nth-child(3) {
+  background-image: linear-gradient(to right top, #da238b, #c3349d, #a842aa, #894db2, #6655b5, #4f67c3, #3277cc, #0086d2, #00a5e4, #00c3ee, #00e0f2, #5ffbf1);
+}
+
+.main_card_body:nth-child(3) .left_container .headline span {
+  color: #da238b;
+}

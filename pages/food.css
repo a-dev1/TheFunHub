@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);
+}
+
+.heading {
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#search {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 250px;
+}
+
+h2,
+p,
+h3 {
+    margin: 20px;
+    color: #fff;
+}
+
+.rc-container {
+    border: 4px dashed #66411d;
+    margin: 20px;
+    padding: 30px 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.img_container {
+    width: 180px;
+    height: 180px;
+    border: 5px solid #fff;
+    border-radius: 2px;
+    position: relative;
+}
+
+.img_container img {
+    width: 100%;
+    height: 100%;
+}
+
+.detail-container img {
+    min-width: 300px;
+    height: 300px;
+    border: 5px solid #fff;
+}
+
+.meal_info {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.651); */
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.meal_info:hover {
+    opacity: 1;
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-gap: 30px;
+}
+
+@media screen and (max-width: 950px) {
+    .results-container {
+        grid-template-columns: repeat(3, 180px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .results-container {
+        grid-template-columns: repeat(2, 180px);
+    }
+
+    .img_container {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .results-container {
+        grid-template-columns: repeat(1, 280px);
+    }
+
+    .img_container {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 20px;
+    min-width: 450px;
+    max-width: 700px;
+}
+
+.ingredients-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+div span {
+    color: #2d2013;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 4px;
+    font-size: 15px;
+}
