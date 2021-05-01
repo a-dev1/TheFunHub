@@ -117,3 +117,12 @@ body {
 .main_card_body:nth-child(3) .left_container .headline span {
   color: #da238b;
 }
+
+.main_card_body:nth-child(4) {
+  /* background-image: linear-gradient(to right top, #11c184, #62b450, #8ea31d, #b38e00, #d27100, #de7000, #ea6e00, #f66c00, #ec9300, #d5b800, #aeda00, #6afa1a); */
+  background-image: linear-gradient(to right top, #205304, #005034, #00495b, #003d6f, #002a66, #022465, #081e63, #0f1760, #10226f, #102d7e, #0d388d, #06439c);
+}
+
+.main_card_body:nth-child(4) .left_container .headline span {
+  color: #06439c;
+}
