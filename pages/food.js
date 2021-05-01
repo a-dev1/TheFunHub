@@ -22,6 +22,7 @@ let showDetails = (element) => {
     for(let i=1; i<=20; i++){
         if(eval(`element.strIngredient${i}`)){
             let ingredient = document.createElement("span");
+            ingredient.classList.add("ingredient");
             ingredient.innerText = eval(`element.strIngredient${i}`) + '-' + eval(`element.strMeasure${i}`);
             ingredients_container.appendChild(ingredient);
         }

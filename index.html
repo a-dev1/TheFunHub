@@ -5,81 +5,101 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="./pages/jquery-3.6.0.min.js"></script>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <title>TheFunHub</title>
 </head>
 <body>
+  <div class="flex flex-col h-screen">
+    <header class="">
+        <nav class="bg-black flex flex-col justify-between flex-wrap px-6 pt-1 pb-2 w-full z-10 top-0 border-b border-gray-800">
+            <div class="flex text-white items-center justify-between">
+                <a class="font-bold no-underline hover:no-underline" href="#">
+                    <span class="text-2xl pl-2">FunHub</span>
+                </a>
+                <span class="italic text-gray-200">&mdash; One stop spot for all things, fun!</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="">
+      <div class="banner"><span>Hit boredom for a six with our recommended mix xD</span></div>
+      <div class="md:grid grid-flow-col grid-cols-2  grid-rows-2 gap-2 m-2 ">
+        <!-- 1st card -->
+        <section class="main_card_body mx-2">
+
+          <div class="left_container">
+            <h3 class="title">FOOD</h3>
+              <p class="headline"><span>Feeling Hungry</span></br>Check this out</p>
+              <p class="description">Food is our common ground, a Universal Experience. This weekend try making some new food, find new recipes. </p>
+              <button><a href="pages/food.html">Eat some food</a></button>
+          </div>
+
+          <div class="right_container">
+            <img src="food3.jpg" alt="macImage">
+            <div class="img_container">
+            </div>
+          </div>
+
+        </section>
+
+        <!-- 4st card -->
+        <section class="main_card_body mx-2">
+
+          <div class="left_container">
+            <h3 class="title">MUSIC</h3>
+              <p class="headline"><span>Listen To</span></br>Great Songs</p>
+              <p class="description">Food is our common ground, a Universal Experience. This weekend try making some new food, find new recipes. </p>
+              <button><a href="pages/food.html">Show some food</a></button>
+          </div>
+
+          <div class="right_container">
+            <img src="food2.jpg" alt="macImage">
+            <div class="img_container">
+            </div>
+          </div>
+        </section>
+
+        <!-- 2nd card -->
+        <section class="main_card_body mx-2">
+
+          <div class="left_container">
+            <h3 class="title">GAMES</h3>
+              <p class="headline"><span>Play Some</span></br>Awesome games</p>
+              <p class="description">Food is our common ground, a Universal Experience. This weekend try making some new food, find new recipes. </p>
+              <button><a href="pages/games.html">Show some games</a></button>
+          </div>
+
+          <div class="right_container">
+            <img src="food3.jpg" alt="macImage">
+            <div class="img_container">
+            </div>
+          </div>
+        </section>
+
+        <!-- 3st card -->
+        <section class="main_card_body mx-2">
+
+          <div class="left_container">
+            <h3 class="title">MOVIES</h3>
+              <p class="headline"><span>Play Some</span></br>Awesome games</p>
+              <p class="description">Food is our common ground, a Universal Experience. This weekend try making some new food, find new recipes. </p>
+              <button><a href="pages/food.html">Show some food</a></button>
+          </div>
+
+          <div class="right_container">
+            <img src="food2.jpg" alt="macImage">
+            <div class="img_container">
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </main>
+</div>
+
   <div class="container">
-
-    <!-- 1st card -->
-    <section class="main_card_body">
-
-      <div class="left_container">
-        <h3 class="title">FOOD</h3>
-          <p class="headline"><span>Feeling Hungry</span></br>Check this out</p>
-          <p class="description">Food is our common ground, a Universal Experience. This weekend try making some new food, find new recipes. Don't have any recipe in mind? No, problem we have a solution to full fill your tummy. Generate random food dishes. Make something with the components you already have.</p>
-          <button><a href="pages/food.html">Eat some food</a></button>
-      </div>
-
-      <div class="right_container">
-        <img src="food3.jpg" alt="macImage">
-        <div class="img_container">
-        </div>
-      </div>
-
-    </section>
-
-
-    <!-- 2nd card -->
-    <section class="main_card_body">
-
-      <div class="left_container">
-        <h3 class="title">GAMES</h3>
-          <p class="headline"><span>Play Some</span></br>Awesome games</p>
-          <p class="description">M1 has the fastest CPU we’ve ever made. With that kind of processing speed, MacBook Air can take on new extraordinarily intensive tasks like professional-quality editing and action-packed gaming. But the 8‑core CPU on M1 isn’t just up to 3.5x faster than the previous generation</p>
-          <button><a href="pages/games.html">Show some games</a></button>
-      </div>
-
-      <div class="right_container">
-        <img src="food3.jpg" alt="macImage">
-        <div class="img_container">
-        </div>
-      </div>
-    </section>
-
-    <!-- 3st card -->
-    <section class="main_card_body">
-
-      <div class="left_container">
-        <h3 class="title">MOVIES</h3>
-          <p class="headline"><span>Play Some</span></br>Awesome games</p>
-          <p class="description">M1 has the fastest CPU we’ve ever made. With that kind of processing speed, MacBook Air can take on new extraordinarily intensive tasks like professional-quality editing and action-packed gaming. But the 8‑core CPU on M1 isn’t just up to 3.5x faster than the previous generation</p>
-          <button><a href="pages/food.html">Show some food</a></button>
-      </div>
-
-      <div class="right_container">
-        <img src="food2.jpg" alt="macImage">
-        <div class="img_container">
-        </div>
-      </div>
-    </section>
-
-    <!-- 4st card -->
-    <section class="main_card_body">
-
-      <div class="left_container">
-        <h3 class="title">MUSIC</h3>
-          <p class="headline"><span>Listen To</span></br>Great Songs</p>
-          <p class="description">M1 has the fastest CPU we’ve ever made. With that kind of processing speed, MacBook Air can take on new extraordinarily intensive tasks like professional-quality editing and action-packed gaming. But the 8‑core CPU on M1 isn’t just up to 3.5x faster than the previous generation</p>
-          <button><a href="pages/food.html">Show some food</a></button>
-      </div>
-
-      <div class="right_container">
-        <img src="food2.jpg" alt="macImage">
-        <div class="img_container">
-        </div>
-      </div>
-    </section>
-
 
   </div>
 </body>
