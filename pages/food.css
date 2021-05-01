@@ -10,7 +10,7 @@ body {
     /* justify-content: center; */
     align-items: center;
     /* background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%); */
-    background: linear-gradient(to right top, #000000 0%, #000000 25%, #000000 100%);
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 .heading {
