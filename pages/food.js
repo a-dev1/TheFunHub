@@ -81,21 +81,21 @@ let find = (e) => {
     }
 }
 
+const AREAS = ["American", "British", "Canadian", "Chinese", "Dutch", "Egyptian", "French", "Greek", "Indian", "Irish", "Italian", "Jamaican", "Japanese", "Kenyan", "Malaysian", "Mexican", "Polish", "Portuguese", "Russian", "Spanish", "Thai", "Tunisian", "Vietnamese"];
+
+const areaWiseFoodGenerator = async (areas) => {
+    
+    try {
+        // createGrid(areas)
+        console.log("Areas[0]:asd ", areas)
+        const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${areas[0]}`);
+        const result = await response.json();
+        console.log("Result: ", result);
+    }   
+    catch(err) {
+        console.log("Error: ",err )
+    }
+}
+
+areaWiseFoodGenerator(AREAS);
 search.addEventListener('keypress', find);
-
-
-// response => response.json()
-
-// function (response) {
-//     return response.json();
-// }
-
-// function sum(a, b) {
-//     return a+b;
-// }
-
-// let sum = (a, b) => {
-//     return a + b;
-// }
-
-// let sum = (a, b) => a+b;
