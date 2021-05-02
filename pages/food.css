@@ -173,3 +173,8 @@ h3 {
     padding: 4px;
     font-size: 15px;
 }
+
+.found-or-not {
+    font-size: 30px;
+    padding: 5px 0 15px 0;
+}
