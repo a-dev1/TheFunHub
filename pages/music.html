@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="music.css">
+    <title>Find Amazing Music</title>
+</head>
+<body>
+    <div class="flex flex-col h-screen">
+        <header class="">
+            <nav class="bg-black flex flex-col justify-between flex-wrap p-6 pb-2 w-full z-10 top-0 border-b border-gray-800">
+                <div class="flex text-white items-center justify-between">
+                    <a class="font-bold no-underline hover:text-black hover:no-underline" href="../index.html">
+                        <span class="text-2xl pl-2">FunHub</span>
+                    </a>
+                    <span class="italic text-gray-200">&mdash; One stop spot for all things, fun!</span>
+                </div>
+
+                <div class="w-full flex-grow flex items-center block " id="nav-content">
+                    <ul class="list-reset justify-center flex flex-1 items-center">
+                        <li class="mr-3">
+                            <a class="text-1xl inline-block no-underline text-gray-300 hover:text-gray-100 hover:text-underline py-2 px-4" href="food.html">Food</a>
+                        </li>
+                        <li class="mr-3">
+                            <a class="text-1xl inline-block no-underline text-gray-300 hover:text-gray-100 hover:text-underline py-2 px-4" href="games.html">Games</a>
+                        </li>
+                        <li class="mr-3">
+                            <a class="text-1xl inline-block no-underline text-gray-300 hover:text-gray-100 hover:text-underline py-2 px-4" href="movies.html">Movies</a>
+                        </li>
+                        <li class="mr-3">
+                            <a class="text-1xl inline-block py-2 px-4 no-underline text-white font-bold"  href="#">Music</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="main" class="flex-1 overflow-y-auto">
+            <div class="container mx-auto py-2 text-white">
+                <div class="flex mx-1">
+                    <span class="font-bold">Genres:</span>
+                    <div id="genres" class="flex overflow-x-scroll ml-2 items-start">
+
+                    </div>
+                </div>
+                <div class="border-b m-2">
+
+                </div>
+                <div class="flex flex-col mx-1">
+                    <span class="font-bold">Playlists:</span>
+                    <div id="games" class="md:grid grid-flow-col grid-cols-4  grid-rows-5 gap-2 m-2">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="music.js"></script>
+</body>
+</html>
