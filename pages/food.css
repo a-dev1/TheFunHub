@@ -17,7 +17,8 @@ body {
 }
 
 .heading {
-    margin: 20px;
+    margin: 50px;
+    font-weight: 800;
     color: #fff;
     text-align: center;
 }
